@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Workout = require("../models/workout");
 
 module.exports = function(app) {
-
+    
     mongoose.connect(
         process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
         {
@@ -50,4 +50,14 @@ module.exports = function(app) {
             console.log(err);
         }
     });
+
+    app.get("/api/workouts/range", async (req, res) => {
+        try {
+            const data = await Workout.find({});
+            res.json(data);
+        } catch (err) {
+            console.log(err);
+        }
+    });
+
 }
