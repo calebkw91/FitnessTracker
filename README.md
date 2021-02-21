@@ -1,7 +1,17 @@
 # FitnessTracker
 
 ## Description
-This app will allow users to track their workout data, and save and display the stats of their past workouts.
+This app will allow users to track their workout data, and save and display the stats of their past workouts. It demonstrates useage of MongoDB, Express.JS, and more. 
+
+## Table of Contents
+
+1. [Screenshot](#screenshot)
+2. [How to Use](#usage)
+3. [Questions](#questions)
+
+## Screenshot
+<a name="screenshot"></a>
+![screenshot](images/homepage_screenshot.png "Homepage Screenshot")
 
 ## How to Use
 <a name="How To"></a>
