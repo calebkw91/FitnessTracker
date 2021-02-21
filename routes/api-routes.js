@@ -1,23 +1,6 @@
-const mongoose = require("mongoose");
 const Workout = require("../models/workout");
 
 module.exports = function(app) {
-    
-    mongoose.connect(
-        process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
-        {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useCreateIndex: true,
-            useFindAndModify: false
-        }
-    );
-
-    const db = mongoose.connection;
-    db.on('error', console.error.bind(console, 'connection error:'));
-    db.once('open', function () {
-        console.log("mongoose connected to DB");
-    });
 
     app.get("/api/workouts", async (req, res) => {
         try {
