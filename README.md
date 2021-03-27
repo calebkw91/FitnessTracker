@@ -12,6 +12,7 @@ This app will allow users to track their workout data, and save and display the 
 ## Screenshot
 <a name="screenshot"></a>
 ![screenshot](images/homepage_screenshot.png "Homepage Screenshot")
+![screenshot](images/dashboard.png "Dashboard Screenshot")
 
 ## How to Use
 <a name="How To"></a>
